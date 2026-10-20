@@ -1,1 +1,33 @@
-# desenvolvimento_de_software_visual_prova_a2
+# Desenvolvimento de Software Visual - Prova A2
+
+## Estrutura do projeto
+
+### Cadastrar Folha
+POST http://localhost:5063/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Helder",
+    "cpf": "125.874.987-08",
+    "mes": 7,
+    "ano": 2026,
+    "horasTrabalhadas": 150,
+    "valorHora": 40
+}
+
+### Listar Folhas
+GET http://localhost:5063/api/folha/listar
+
+### Buscar Folha por CPF, Mês e Ano
+GET http://localhost:5063/api/folha/buscar/125.874.987-08/10/2026
+
+### Remover Folha por CPF, Mês e Ano
+DELETE http://localhost:5063/api/folha/remover/125.874.987-08/13/2025
+
+### Soma total Salário Líquido
+GET http://localhost:5063/api/folha/total-liquido
+
+## Autor
+- Matheus Fernando Costa Perrude da Silva
+- Helder Dupont
+
